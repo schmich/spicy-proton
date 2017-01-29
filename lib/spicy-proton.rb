@@ -60,7 +60,7 @@ module Spicy
     private
 
     def self.format_with(source, format)
-      format.gsub(/%([anc])/) do
+      format.gsub(/%([anc%])/) do
         case $1
         when 'a'
           source.adjective
@@ -68,6 +68,8 @@ module Spicy
           source.noun
         when 'c'
           source.color
+        when '%'
+          '%'
         end
       end
     end

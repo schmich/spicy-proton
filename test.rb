@@ -39,6 +39,8 @@ class Tests < Minitest::Test
       assert(fmt.length >= 7)
       assert(fmt.index(':1') > 0)
       assert(fmt.index(':2') > 0)
+      fmt = gen.format('%%')
+      assert_equal('%', fmt)
     }
   end
 
