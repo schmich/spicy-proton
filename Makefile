@@ -10,4 +10,4 @@ lib/corpus/combined.bin: lib/corpus/*.yaml
 	ruby -Ilib -rbinary -e 'Spicy::BinaryCorpus.generate'
 
 test:
-	ruby -Ilib test.rb
+	ruby -Ilib tests.rb
