@@ -3,12 +3,10 @@ Gem::Specification.new do |s|
   s.version = (`git tag`.lines.last || '0.0.1').strip
   s.date = Time.now.strftime('%Y-%m-%d')
   s.summary = 'Generate a random adjective-noun pair.'
-  s.description = <<-END
-    Generate a random adjective-noun pair.
-  END
+  s.description = 'Generate a random adjective-noun pair.'
   s.authors = ['Chris Schmich']
   s.email = 'schmch@gmail.com'
-  s.files = Dir['{lib}/**/*.rb', '{lib}/corpus/*', '*.md', 'LICENSE']
+  s.files = Dir['lib/**/*.rb', 'lib/corpus/*.{yaml,bin}', '*.md', 'LICENSE']
   s.require_path = 'lib'
   s.homepage = 'https://github.com/schmich/spicy-proton'
   s.license = 'MIT'
