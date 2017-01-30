@@ -10,21 +10,21 @@ module Spicy
       @corpus = Memory::Corpus.new
     end
 
-    def self.adjective(min: nil, max: nil)
+    def self.adjective(*args)
       Disk::Corpus.use do |c|
-        c.adjective(min: min, max: max)
+        c.adjective(*args)
       end
     end
 
-    def self.noun(min: nil, max: nil)
+    def self.noun(*args)
       Disk::Corpus.use do |c|
-        c.noun(min: min, max: max)
+        c.noun(*args)
       end
     end
 
-    def self.color(min: nil, max: nil)
+    def self.color(*args)
       Disk::Corpus.use do |c|
-        c.color(min: min, max: max)
+        c.color(*args)
       end
     end
 

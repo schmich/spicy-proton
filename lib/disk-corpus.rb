@@ -1,6 +1,6 @@
 require 'yaml'
-require 'securerandom'
 require 'bindata'
+require 'seek'
 
 module Spicy
 end
@@ -33,6 +33,8 @@ module Spicy::Disk
   end
 
   class WordList
+    include Spicy::Seek
+
     def initialize(file_name)
       @file = File.open(file_name, 'r')
       header = Header.read(@file)
@@ -49,24 +51,11 @@ module Spicy::Disk
       @file.close
     end
 
-    def word(min: nil, max: nil)
-      raise RangeError.new('min must be no more than max') if !min.nil? && !max.nil? && min > max
-
-      min = [min || @min, @min].max
-      max = [max || @max, @max].min
-
-      rand_min = @cumulative[min - 1] || 0
-      rand_max = @cumulative[max] || @cumulative[@max]
-      index = SecureRandom.random_number(rand_min...rand_max)
-
-      min.upto(max) do |i|
-        if @cumulative[i] > index
-          @file.seek(@origin + index * @width, IO::SEEK_SET)
-          return @file.read(@width).strip
-        end
+    def word(*args)
+      self.seek(*args) do |index, _|
+        @file.seek(@origin + index * @width, IO::SEEK_SET)
+        @file.read(@width).strip
       end
-
-      nil
     end
   end
   
@@ -104,11 +93,11 @@ module Spicy::Disk
 
     private
 
-    def generate(type, min: nil, max: nil)
+    def generate(type, *args)
       @lists[type] ||= begin
         WordList.new(Files.send(type))
       end
-      @lists[type].word(min: min, max: max)
+      @lists[type].word(*args)
     end
   end
 end

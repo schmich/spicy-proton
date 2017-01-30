@@ -72,7 +72,7 @@ class Tests < Minitest::Test
   def test_invert_min_max
     generators { |gen|
       [:adjective, :noun, :color].each do |type|
-        assert_error(RangeError) do
+        assert_error(ArgumentError) do
           gen.send(type, min: 2, max: 1)
         end
       end
@@ -112,6 +112,16 @@ class Tests < Minitest::Test
         word = gen.send(type, min: 6, max: 6)
         assert_string(word)
         assert_equal(6, word.length)
+      end
+    }
+  end
+
+  def test_length
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        word = gen.send(type, length: 4)
+        assert_string(word)
+        assert_equal(4, word.length)
       end
     }
   end

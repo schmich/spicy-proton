@@ -1,5 +1,5 @@
 require 'yaml'
-require 'securerandom'
+require 'seek'
 
 module Spicy
 end
@@ -24,6 +24,8 @@ module Spicy::Memory
   end
 
   class WordList
+    include Spicy::Seek
+
     def initialize(file_name)
       dataset = YAML.load_file(file_name)
 
@@ -34,24 +36,11 @@ module Spicy::Memory
       @max = @cumulative.keys.max
     end
 
-    def word(min: nil, max: nil)
-      raise RangeError.new('min must be no more than max') if !min.nil? && !max.nil? && min > max
-
-      min = [min || @min, @min].max
-      max = [max || @max, @max].min
-
-      rand_min = @cumulative[min - 1] || 0
-      rand_max = @cumulative[max] || @cumulative[@max]
-      index = SecureRandom.random_number(rand_min...rand_max)
-
-      min.upto(max) do |i|
-        if @cumulative[i] > index
-          index -= (@cumulative[i - 1] || 0)
-          return @words[i][index]
-        end
+    def word(*args)
+      self.seek(*args) do |index, length|
+        index -= (@cumulative[length - 1] || 0)
+        @words[length][index]
       end
-
-      nil
     end
   end
 
@@ -63,16 +52,16 @@ module Spicy::Memory
       @colors = WordList.new(Files.colors)
     end
 
-    def adjective(min: nil, max: nil)
-      @adjectives.word(min: min, max: max)
+    def adjective(*args)
+      @adjectives.word(*args)
     end
 
-    def noun(min: nil, max: nil)
-      @nouns.word(min: min, max: max)
+    def noun(*args)
+      @nouns.word(*args)
     end
 
-    def color(min: nil, max: nil)
-      @colors.word(min: min, max: max)
+    def color(*args)
+      @colors.word(*args)
     end
 
     def pair(separator = '-')
