@@ -30,6 +30,7 @@ Spicy::Proton.format('%a/%c/%n')    # => "slippery/ultramarine/rattler"
 Spicy::Proton.adjective(max: 5)     # => "foamy"
 Spicy::Proton.noun(min: 10)         # => "translucence"
 Spicy::Proton.color(min: 5, max: 7) # => "indigo"
+Spicy::Proton.noun(length: 8)       # => "morality"
 ```
 
 When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory. The instance methods are the same as their static counterparts.
@@ -41,6 +42,7 @@ generator = Spicy::Proton.new
 1000.times do 
   generator.adjective
   generator.noun(min: 7)
+  generator.color(length: 4) 
   generator.pair
   generator.pair(':')
   generator.format('%a-%c-%n')
