@@ -33,7 +33,7 @@ Spicy::Proton.color(min: 5, max: 7) # => "indigo"
 Spicy::Proton.noun(length: 8)       # => "morality"
 ```
 
-When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory. The instance methods are the same as their static counterparts.
+When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory. The instance methods are the same as their class method counterparts.
 
 ```ruby
 require 'spicy-proton'
@@ -43,8 +43,7 @@ generator = Spicy::Proton.new
   generator.adjective
   generator.noun(min: 7)
   generator.color(length: 4) 
-  generator.pair
-  generator.pair(':')
+  generator.pair('.')
   generator.format('%a-%c-%n')
 end
 ```
