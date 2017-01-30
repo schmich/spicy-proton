@@ -19,15 +19,20 @@ When generating single or infrequent specimens, class methods are faster and use
 ```ruby
 require 'spicy-proton'
 
-Spicy::Proton.adjective           # => "extreme"
-Spicy::Proton.noun                # => "loan"
-Spicy::Proton.color               # => "burgundy"
-Spicy::Proton.pair                # => "opportune-spacesuit"
-Spicy::Proton.pair(':')           # => "hip:squash"
-Spicy::Proton.format('%a/%c/%n')  # => "slippery/ultramarine/rattler"
+Spicy::Proton.adjective             # => "extreme"
+Spicy::Proton.noun                  # => "loan"
+Spicy::Proton.color                 # => "burgundy"
+Spicy::Proton.pair                  # => "opportune-spacesuit"
+Spicy::Proton.pair(':')             # => "hip:squash"
+Spicy::Proton.format('%a/%c/%n')    # => "slippery/ultramarine/rattler"
+
+# With length constraints.
+Spicy::Proton.adjective(max: 5)     # => "foamy"
+Spicy::Proton.noun(min: 10)         # => "translucence"
+Spicy::Proton.color(min: 5, max: 7) # => "indigo"
 ```
 
-When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory.
+When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory. The instance methods are the same as their static counterparts.
 
 ```ruby
 require 'spicy-proton'
@@ -35,10 +40,10 @@ require 'spicy-proton'
 generator = Spicy::Proton.new
 1000.times do 
   generator.adjective
-  generator.noun
+  generator.noun(min: 7)
   generator.pair
   generator.pair(':')
-  generator.format('%a/%c/%n')
+  generator.format('%a-%c-%n')
 end
 ```
 
