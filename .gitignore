@@ -1,2 +1,3 @@
-lib/corpus/combined.bin
+lib/corpus/*.bin
+lib/corpus/*.yaml
 *.gem

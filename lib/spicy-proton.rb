@@ -1,61 +1,50 @@
-require 'yaml'
-require 'binary'
-require 'files'
+require 'forwardable'
+require 'disk-corpus'
+require 'memory-corpus'
 
 module Spicy
   class Proton
+    extend Forwardable
+
     def initialize
-      dir = File.dirname(__FILE__)
-      @adjectives = YAML.load_file(Files.adjectives)
-      @nouns = YAML.load_file(Files.nouns)
-      @colors = YAML.load_file(Files.colors)
+      @corpus = Memory::Corpus.new
     end
 
-    def self.adjective
-      BinaryCorpus.use(&:adjective)
+    def self.adjective(min: nil, max: nil)
+      Disk::Corpus.use do |c|
+        c.adjective(min: min, max: max)
+      end
     end
 
-    def self.noun
-      BinaryCorpus.use(&:noun)
+    def self.noun(min: nil, max: nil)
+      Disk::Corpus.use do |c|
+        c.noun(min: min, max: max)
+      end
     end
 
-    def self.color
-      BinaryCorpus.use(&:color)
+    def self.color(min: nil, max: nil)
+      Disk::Corpus.use do |c|
+        c.color(min: min, max: max)
+      end
     end
 
     def self.pair(separator = '-')
-      BinaryCorpus.use do |b|
-        "#{b.adjective}#{separator}#{b.noun}"
+      Disk::Corpus.use do |c|
+        "#{c.adjective}#{separator}#{c.noun}"
       end
     end
 
     def self.format(format)
-      BinaryCorpus.use do |b|
-        self.format_with(b, format)
+      Disk::Corpus.use do |c|
+        self.format_with(c, format)
       end
-    end
-
-    def adjective
-      random(adjectives)
-    end
-
-    def noun
-      random(nouns)
-    end
-
-    def color
-      random(colors)
-    end
-
-    def pair(separator = '-')
-      "#{self.adjective}#{separator}#{self.noun}"
     end
 
     def format(format)
       self.class.format_with(self, format)
     end
 
-    attr_accessor :adjectives, :nouns, :colors
+    def_delegators :@corpus, :adjective, :noun, :color, :pair, :adjectives, :nouns, :colors
 
     private
 
@@ -72,11 +61,6 @@ module Spicy
           '%'
         end
       end
-    end
-
-    def random(set)
-      index = SecureRandom.random_number(set.count)
-      set[index]
     end
   end
 end

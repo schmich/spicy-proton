@@ -17,7 +17,8 @@ class Tests < Minitest::Test
 
   def test_pair
     generators { |gen|
-      pair = assert_generated(gen, :pair)
+      pair = gen.pair
+      assert_string(pair)
       assert(pair.length >= 3)
       assert(pair.index('-') > 0)
     }
@@ -44,6 +45,77 @@ class Tests < Minitest::Test
     }
   end
 
+  def test_min
+    generators { |gen|
+      assert_generated(gen, :noun, min: 8)
+      assert_generated(gen, :adjective, min: 8)
+      assert_generated(gen, :color, min: 8)
+    }
+  end
+
+  def test_max
+    generators { |gen|
+      assert_generated(gen, :noun, max: 4)
+      assert_generated(gen, :adjective, max: 4)
+      assert_generated(gen, :color, max: 4)
+    }
+  end
+
+  def test_min_max
+    generators { |gen|
+      assert_generated(gen, :noun, min: 3, max: 4)
+      assert_generated(gen, :adjective, min: 3, max: 4)
+      assert_generated(gen, :color, min: 3, max: 4)
+    }
+  end
+
+  def test_invert_min_max
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        assert_error(RangeError) do
+          gen.send(type, min: 2, max: 1)
+        end
+      end
+    }
+  end
+
+  def test_bad_min
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        word = gen.send(type, min: 1000)
+        assert_nil(word)
+      end
+    }
+  end
+
+  def test_bad_max
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        word = gen.send(type, max: 0)
+        assert_nil(word)
+      end
+    }
+  end
+
+  def test_large_range
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        word = gen.send(type, min: 0, max: 10000)
+        assert_string(word)
+      end
+    }
+  end
+
+  def test_equal_min_max
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        word = gen.send(type, min: 6, max: 6)
+        assert_string(word)
+        assert_equal(6, word.length)
+      end
+    }
+  end
+
   private
 
   def generators(&block)
@@ -51,8 +123,22 @@ class Tests < Minitest::Test
     block.call(Spicy::Proton.new)
   end
 
-  def assert_generated(source, type)
-    string = source.send(type)
+  def assert_error(type, &block)
+    error = nil
+    begin
+      block.call
+    rescue => e
+      error = e
+    ensure
+      refute_equal(nil, error)
+      assert_equal(type, error.class)
+    end
+  end
+
+  def assert_generated(source, type, min: nil, max: nil)
+    string = source.send(type, min: min, max: max)
+    assert(string.length >= min) if min
+    assert(string.length <= max) if max
     assert_string(string)
   end
 
