@@ -126,6 +126,19 @@ class Tests < Minitest::Test
     }
   end
 
+  def test_length_min_max
+    generators { |gen|
+      [:adjective, :noun, :color].each do |type|
+        assert_error(ArgumentError) do
+          gen.send(type, length: 5, min: 4)
+        end
+        assert_error(ArgumentError) do
+          gen.send(type, length: 5, max: 7)
+        end
+      end
+    }
+  end
+
   private
 
   def generators(&block)
