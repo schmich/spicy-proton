@@ -1,5 +1,5 @@
 # Spicy::Proton
-Generate a random adjective-noun pair.
+Generate a random adjective-noun word pair. Works with Ruby 1.9.x and newer.
 
 ## Quick Start
 
