@@ -158,7 +158,8 @@ class Tests < Minitest::Test
     end
   end
 
-  def assert_generated(source, type, min: nil, max: nil)
+  def assert_generated(source, type, opts = {})
+    min, max = opts[:min], opts[:max]
     string = source.send(type, min: min, max: max)
     assert(string.length >= min) if min
     assert(string.length <= max) if max

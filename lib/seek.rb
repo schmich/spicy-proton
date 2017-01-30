@@ -2,7 +2,9 @@ require 'securerandom'
 
 module Spicy
   module Seek
-    def seek(min: nil, max: nil, length: nil, &found)
+    def seek(opts = {}, &found)
+      min, max, length = opts[:min], opts[:max], opts[:length]
+
       if !length.nil? && (!min.nil? || !max.nil?)
         raise ArgumentError.new('length cannot be specified if min or max are specified.')
       end
@@ -16,7 +18,9 @@ module Spicy
 
       rand_min = @cumulative[min - 1] || 0
       rand_max = @cumulative[max] || @cumulative[@max]
-      index = SecureRandom.random_number(rand_min...rand_max)
+
+      range = rand_max - rand_min + 1
+      index = rand_min + SecureRandom.random_number(range)
 
       min.upto(max) do |len|
         if @cumulative[len] > index
