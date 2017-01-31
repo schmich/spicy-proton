@@ -11,10 +11,6 @@ class Tests < Minitest::Test
     generators { |gen| assert_generated(gen, :noun) }
   end
 
-  def test_color
-    generators { |gen| assert_generated(gen, :color) }
-  end
-
   def test_pair
     generators { |gen|
       pair = gen.pair
@@ -49,7 +45,6 @@ class Tests < Minitest::Test
     generators { |gen|
       assert_generated(gen, :noun, min: 8)
       assert_generated(gen, :adjective, min: 8)
-      assert_generated(gen, :color, min: 8)
     }
   end
 
@@ -57,7 +52,6 @@ class Tests < Minitest::Test
     generators { |gen|
       assert_generated(gen, :noun, max: 4)
       assert_generated(gen, :adjective, max: 4)
-      assert_generated(gen, :color, max: 4)
     }
   end
 
@@ -65,13 +59,12 @@ class Tests < Minitest::Test
     generators { |gen|
       assert_generated(gen, :noun, min: 3, max: 4)
       assert_generated(gen, :adjective, min: 3, max: 4)
-      assert_generated(gen, :color, min: 3, max: 4)
     }
   end
 
   def test_invert_min_max
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         assert_error(ArgumentError) do
           gen.send(type, min: 2, max: 1)
         end
@@ -81,7 +74,7 @@ class Tests < Minitest::Test
 
   def test_bad_min
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         word = gen.send(type, min: 1000)
         assert_nil(word)
       end
@@ -90,7 +83,7 @@ class Tests < Minitest::Test
 
   def test_bad_max
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         word = gen.send(type, max: 0)
         assert_nil(word)
       end
@@ -99,7 +92,7 @@ class Tests < Minitest::Test
 
   def test_large_range
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         word = gen.send(type, min: 0, max: 10000)
         assert_string(word)
       end
@@ -108,7 +101,7 @@ class Tests < Minitest::Test
 
   def test_equal_min_max
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         word = gen.send(type, min: 6, max: 6)
         assert_string(word)
         assert_equal(6, word.length)
@@ -118,7 +111,7 @@ class Tests < Minitest::Test
 
   def test_length
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         word = gen.send(type, length: 4)
         assert_string(word)
         assert_equal(4, word.length)
@@ -128,7 +121,7 @@ class Tests < Minitest::Test
 
   def test_length_min_max
     generators { |gen|
-      [:adjective, :noun, :color].each do |type|
+      [:adjective, :noun].each do |type|
         assert_error(ArgumentError) do
           gen.send(type, length: 5, min: 4)
         end

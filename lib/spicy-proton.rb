@@ -22,12 +22,6 @@ module Spicy
       end
     end
 
-    def self.color(*args)
-      Disk::Corpus.use do |c|
-        c.color(*args)
-      end
-    end
-
     def self.pair(separator = '-')
       Disk::Corpus.use do |c|
         "#{c.adjective}#{separator}#{c.noun}"
@@ -44,7 +38,7 @@ module Spicy
       self.class.format_with(self, format)
     end
 
-    def_delegators :@corpus, :adjective, :noun, :color, :pair, :adjectives, :nouns, :colors
+    def_delegators :@corpus, :adjective, :noun, :pair, :adjectives, :nouns
 
     private
 
@@ -55,8 +49,6 @@ module Spicy
           source.adjective
         when 'n'
           source.noun
-        when 'c'
-          source.color
         when '%'
           '%'
         end

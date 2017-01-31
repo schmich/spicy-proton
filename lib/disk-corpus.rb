@@ -18,10 +18,6 @@ module Spicy::Disk
     def self.nouns
       @@nouns ||= File.join(dir, 'nouns.bin')
     end
-
-    def self.colors
-      @@colors ||= File.join(dir, 'colors.bin')
-    end
   end
 
   class Header < BinData::Record
@@ -85,10 +81,6 @@ module Spicy::Disk
 
     def noun(*args)
       generate(:nouns, *args)
-    end
-
-    def color(*args)
-      generate(:colors, *args)
     end
 
     private

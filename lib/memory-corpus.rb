@@ -17,10 +17,6 @@ module Spicy::Memory
     def self.nouns
       @@nouns ||= File.join(dir, 'nouns.yaml')
     end
-
-    def self.colors
-      @@colors ||= File.join(dir, 'colors.yaml')
-    end
   end
 
   class WordList
@@ -49,7 +45,6 @@ module Spicy::Memory
       dir = File.dirname(__FILE__)
       @adjectives = WordList.new(Files.adjectives)
       @nouns = WordList.new(Files.nouns)
-      @colors = WordList.new(Files.colors)
     end
 
     def adjective(*args)
@@ -58,10 +53,6 @@ module Spicy::Memory
 
     def noun(*args)
       @nouns.word(*args)
-    end
-
-    def color(*args)
-      @colors.word(*args)
     end
 
     def pair(separator = '-')

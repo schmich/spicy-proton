@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.date = Time.now.strftime('%Y-%m-%d')
   s.summary = 'Generate a random adjective-noun word pair.'
   s.description = <<-END
-    Generate a random adjective-noun word pair. Includes random adjective, noun,
-    and color generation along with formatting and length constraints.
+    Generate a random adjective-noun word pair. Includes random adjective
+    and noun generation along with formatting and length constraints.
   END
   s.description = ''
   s.authors = ['Chris Schmich']
