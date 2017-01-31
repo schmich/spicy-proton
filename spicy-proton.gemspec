@@ -2,9 +2,9 @@ Gem::Specification.new do |s|
   s.name = 'spicy-proton'
   s.version = (`git tag`.lines.last || '0.0.1').strip
   s.date = Time.now.strftime('%Y-%m-%d')
-  s.summary = 'Generate a random adjective-noun word pair.'
+  s.summary = 'Generate a random English adjective-noun word pair.'
   s.description = <<-END
-    Generate a random adjective-noun word pair. Includes random adjective
+    Generate a random English adjective-noun word pair. Includes random adjective
     and noun generation along with formatting and length constraints.
   END
   s.description = ''
