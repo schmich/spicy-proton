@@ -8,6 +8,8 @@ test: corpus
 gem: *.gem
 
 publish: gem
+	@ls -1 *gem
+	@echo Press enter to publish gem. && read
 	gem push *.gem
 
 *.gem: corpus
