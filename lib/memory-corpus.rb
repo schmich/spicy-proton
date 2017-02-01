@@ -33,7 +33,7 @@ module Spicy::Memory
     end
 
     def word(*args)
-      self.seek(*args) do |index, length|
+      seek(*args) do |index, length|
         index -= (@cumulative[length - 1] || 0)
         @words[length][index]
       end

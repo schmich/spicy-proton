@@ -2,6 +2,8 @@ require 'securerandom'
 
 module Spicy
   module Seek
+    private
+
     def seek(opts = {}, &found)
       min, max, length = opts[:min], opts[:max], opts[:length]
 
@@ -17,10 +19,8 @@ module Spicy
       max = [max || length || @max, @max].min
 
       rand_min = @cumulative[min - 1] || 0
-      rand_max = @cumulative[max] || @cumulative[@max]
-
-      range = rand_max - rand_min + 1
-      index = rand_min + SecureRandom.random_number(range)
+      rand_max = (@cumulative[max] || @cumulative[@max]) - 1
+      index = rand(rand_min, rand_max)
 
       min.upto(max) do |len|
         if @cumulative[len] > index
@@ -29,6 +29,11 @@ module Spicy
       end
 
       nil
+    end
+
+    def rand(low, high)
+      range = high - low + 1
+      low + SecureRandom.random_number(range)
     end
   end
 end

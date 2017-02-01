@@ -48,7 +48,7 @@ module Spicy::Disk
     end
 
     def word(*args)
-      self.seek(*args) do |index, _|
+      seek(*args) do |index, _|
         @file.seek(@origin + index * @width, IO::SEEK_SET)
         @file.read(@width).strip
       end
