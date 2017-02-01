@@ -1,6 +1,9 @@
 # Spicy::Proton
 Generate a random English adjective-noun word pair. Works with Ruby 1.9.x and newer.
 
+[![Gem Version](https://badge.fury.io/rb/spicy-proton.svg)](http://rubygems.org/gems/spicy-proton)
+[![Build Status](https://travis-ci.org/schmich/spicy-proton.svg?branch=master)](https://travis-ci.org/schmich/spicy-proton)
+
 ## Quick Start
 
 `gem install spicy-proton`
