@@ -15,5 +15,5 @@ publish: gem
 
 corpus: $(corpus)
 
-$(corpus):
+$(corpus): corpus/adjectives.yaml corpus/nouns.yaml
 	ruby -Ilib corpus/generate.rb
