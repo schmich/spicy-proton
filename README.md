@@ -46,7 +46,7 @@ generator = Spicy::Proton.new
   generator.noun(min: 7)
   generator.pair
   generator.pair('.')
-  generator.format('%a-%c-%n')
+  generator.format('%a-%n')
 end
 ```
 
