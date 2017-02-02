@@ -29,10 +29,10 @@ Spicy::Proton.pair(':')             # => "hip:squash"
 Spicy::Proton.format('%a/%n')       # => "slippery/rattler"
 
 # With length constraints.
-Spicy::Proton.noun(min: 10)         # => "translucence"
-Spicy::Proton.adjective(max: 5)     # => "foamy"
-Spicy::Proton.noun(min: 5, max: 7)  # => "target"
+Spicy::Proton.adjective(max: 5)     # => "dank"
+Spicy::Proton.noun(min: 10)         # => "interpolation"
 Spicy::Proton.adjective(length: 8)  # => "medieval"
+Spicy::Proton.noun(min: 5, max: 7)  # => "dolphin"
 ```
 
 When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory. The instance methods are the same as their class method counterparts.
