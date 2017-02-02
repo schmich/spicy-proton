@@ -26,7 +26,7 @@ Spicy::Proton.adjective             # => "extreme"
 Spicy::Proton.noun                  # => "loan"
 Spicy::Proton.pair                  # => "opportune-spacesuit"
 Spicy::Proton.pair(':')             # => "hip:squash"
-Spicy::Proton.format('%a/%n')       # => "slippery/rattler"
+Spicy::Proton.format('%a/%a/%n')    # => "dapper/festive/fedora"
 
 # With length constraints.
 Spicy::Proton.adjective(max: 5)     # => "dank"
