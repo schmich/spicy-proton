@@ -43,7 +43,7 @@ module Spicy
     private
 
     def self.format_with(source, format)
-      format.gsub(/%([anc%])/) do
+      format.gsub(/%([an%])/) do
         case $1
         when 'a'
           source.adjective
