@@ -24,7 +24,7 @@ module Spicy
 
       min.upto(max) do |len|
         if @cumulative[len] > index
-          return found.call(index, len)
+          return found.call(index)
         end
       end
 

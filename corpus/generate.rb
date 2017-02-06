@@ -1,5 +1,6 @@
 require 'yaml'
 require 'disk-corpus'
+require 'memory-corpus'
 
 ['adjectives.yaml', 'nouns.yaml'].each do |source|
   dir = File.dirname(__FILE__)
@@ -25,15 +26,17 @@ require 'disk-corpus'
   end
 
   out_dir = File.realpath(File.join(dir, '..', 'lib', 'corpus'))
-  file = File.join(out_dir, File.basename(source, '.yaml') + '.bin')
-  File.open(file, 'wb') do |w|
-    header = Spicy::Disk::Header.new
-    width = words.values.flatten.map(&:length).max
-    header.width = width
-    header.min_length = words.keys.min
-    cumulative.values.each do |count|
-      header.cumulative << count
-    end
+
+  header = Spicy::Header.new
+  header.min_length = words.keys.min
+
+  cumulative.values.each do |count|
+    header.cumulative << count
+  end
+
+  fixed_file = File.join(out_dir, File.basename(source, '.yaml') + '-fixed.bin')
+  File.open(fixed_file, 'wb') do |w|
+    width = words.keys.max
     header.write(w)
     words.values.flatten.each do |word|
       padding = "\0" * (width - word.length)
@@ -41,8 +44,9 @@ require 'disk-corpus'
     end
   end
 
-  file = File.join(out_dir, source)
-  File.open(file, 'wb') do |f|
-    f.write(YAML.dump({ 'cumulative' => cumulative, 'words' => words }))
+  packed_file = File.join(out_dir, File.basename(source, '.yaml') + '.bin')
+  File.open(packed_file, 'wb') do |w|
+    header.write(w)
+    w.write(words.values.join("\0"))
   end
 end

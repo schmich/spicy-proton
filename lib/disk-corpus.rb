@@ -1,6 +1,6 @@
 require 'yaml'
-require 'bindata'
 require 'seek'
+require 'header'
 
 module Spicy
 end
@@ -12,20 +12,12 @@ module Spicy::Disk
     end
 
     def self.adjectives
-      @@adjectives ||= File.join(dir, 'adjectives.bin')
+      @@adjectives ||= File.join(dir, 'adjectives-fixed.bin')
     end
 
     def self.nouns
-      @@nouns ||= File.join(dir, 'nouns.bin')
+      @@nouns ||= File.join(dir, 'nouns-fixed.bin')
     end
-  end
-
-  class Header < BinData::Record
-    endian :little
-    uint8 :width
-    uint8 :min_length
-    uint8 :group_count, :value => lambda { cumulative.length }
-    array :cumulative, :type => :uint32, :initial_length => :group_count
   end
 
   class WordList
@@ -33,14 +25,12 @@ module Spicy::Disk
 
     def initialize(file_name)
       @file = File.open(file_name, 'rb')
-      header = Header.read(@file)
+
+      @cumulative = Spicy::Header.cumulative(@file)
+      @min = @cumulative.keys.min
+      @max = @cumulative.keys.max
+
       @origin = @file.pos
-
-      @width = header.width.to_i
-      @min = header.min_length.to_i
-      @max = @min + header.cumulative.count - 1
-
-      @cumulative = Hash[(@min..@max).zip(header.cumulative.to_a.map(&:to_i))]
     end
 
     def close
@@ -48,9 +38,9 @@ module Spicy::Disk
     end
 
     def word(*args)
-      seek(*args) do |index, _|
-        @file.seek(@origin + index * @width, IO::SEEK_SET)
-        @file.read(@width).strip
+      seek(*args) do |index|
+        @file.seek(@origin + index * @max, IO::SEEK_SET)
+        @file.read(@max).strip
       end
     end
   end

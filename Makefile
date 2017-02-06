@@ -1,4 +1,4 @@
-corpus = lib/corpus/adjectives.yaml lib/corpus/nouns.yaml lib/corpus/adjectives.bin lib/corpus/nouns.bin
+corpus = lib/corpus/adjectives.bin lib/corpus/nouns.bin lib/corpus/adjectives-fixed.bin lib/corpus/nouns-fixed.bin
 
 .PHONY: test
 

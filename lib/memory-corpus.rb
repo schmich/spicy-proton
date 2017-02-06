@@ -1,5 +1,6 @@
 require 'yaml'
 require 'seek'
+require 'header'
 
 module Spicy
 end
@@ -11,11 +12,11 @@ module Spicy::Memory
     end
 
     def self.adjectives
-      @@adjectives ||= File.join(dir, 'adjectives.yaml')
+      @@adjectives ||= File.join(dir, 'adjectives.bin')
     end
 
     def self.nouns
-      @@nouns ||= File.join(dir, 'nouns.yaml')
+      @@nouns ||= File.join(dir, 'nouns.bin')
     end
   end
 
@@ -23,19 +24,17 @@ module Spicy::Memory
     include Spicy::Seek
 
     def initialize(file_name)
-      dataset = YAML.load_file(file_name)
-
-      @words = dataset['words']
-      @cumulative = dataset['cumulative']
-
-      @min = @cumulative.keys.min
-      @max = @cumulative.keys.max
+      File.open(file_name, 'rb') do |r|
+        @cumulative = Spicy::Header.cumulative(r)
+        @min = @cumulative.keys.min
+        @max = @cumulative.keys.max
+        @words = r.read.split("\0")
+      end
     end
 
     def word(*args)
-      seek(*args) do |index, length|
-        index -= (@cumulative[length - 1] || 0)
-        @words[length][index]
+      seek(*args) do |index|
+        @words[index]
       end
     end
   end
