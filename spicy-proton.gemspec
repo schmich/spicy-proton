@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = ''
   s.authors = ['Chris Schmich']
   s.email = 'schmch@gmail.com'
-  s.files = Dir['lib/**/*.rb', 'lib/corpus/*.{yaml,bin}', '*.md', 'LICENSE']
+  s.files = Dir['lib/**/*.rb', 'lib/corpus/*.bin', '*.md', 'LICENSE']
   s.require_path = 'lib'
   s.homepage = 'https://github.com/schmich/spicy-proton'
   s.license = 'MIT'
