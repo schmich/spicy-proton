@@ -32,7 +32,7 @@ module Spicy::Disk
     include Spicy::Seek
 
     def initialize(file_name)
-      @file = File.open(file_name, 'r')
+      @file = File.open(file_name, 'rb')
       header = Header.read(@file)
       @origin = @file.pos
 

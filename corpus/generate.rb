@@ -26,7 +26,7 @@ require 'disk-corpus'
 
   out_dir = File.realpath(File.join(dir, '..', 'lib', 'corpus'))
   file = File.join(out_dir, File.basename(source, '.yaml') + '.bin')
-  File.open(file, 'w') do |w|
+  File.open(file, 'wb') do |w|
     header = Spicy::Disk::Header.new
     width = words.values.flatten.map(&:length).max
     header.width = width
@@ -42,7 +42,7 @@ require 'disk-corpus'
   end
 
   file = File.join(out_dir, source)
-  File.open(file, 'w') do |f|
+  File.open(file, 'wb') do |f|
     f.write(YAML.dump({ 'cumulative' => cumulative, 'words' => words }))
   end
 end
