@@ -57,6 +57,10 @@ generator.adjectives    # => ["dreadful", "methodist", "necessary", "tough", ...
 generator.nouns         # => ["rustling", "fiance", "infield", "chatter", ...]
 ```
 
+## Credits
+
+Inspired by [btford/adj-noun](https://github.com/btford/adj-noun). Thanks to [NLTK](http://www.nltk.org/) for the word corpus.
+
 ## License
 
 Copyright &copy; 2017 Chris Schmich  
