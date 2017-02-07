@@ -31,13 +31,15 @@ class Tests < Minitest::Test
 
   def test_format
     generators { |gen|
-      fmt = gen.format('%a:1%c:2%n')
+      fmt = gen.format('%a:1%n:2')
       assert_string(fmt)
       assert(fmt.length >= 7)
       assert(fmt.index(':1') > 0)
-      assert(fmt.index(':2') > 0)
+      assert(fmt.index(':2') > fmt.index(':1'))
       fmt = gen.format('%%')
       assert_equal('%', fmt)
+      fmt = gen.format('%z')
+      assert_equal('%z', fmt)
     }
   end
 
