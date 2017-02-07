@@ -1,4 +1,3 @@
-require 'yaml'
 require 'seek'
 require 'header'
 
