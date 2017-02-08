@@ -134,6 +134,12 @@ class Tests < Minitest::Test
     }
   end
 
+  def test_word_lists
+    c = Spicy::Proton.new
+    refute(c.adjectives.empty?)
+    refute(c.nouns.empty?)
+  end
+
   private
 
   def corpus(&block)
