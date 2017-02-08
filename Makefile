@@ -1,4 +1,4 @@
-corpus = lib/corpus/adjectives.bin lib/corpus/nouns.bin lib/corpus/adjectives-fixed.bin lib/corpus/nouns-fixed.bin
+corpus = lib/corpus/adjectives.bin lib/corpus/nouns.bin lib/corpus/adjectives-fixed.bin lib/corpus/nouns-fixed.bin lib/corpus/adverbs.bin lib/corpus/adverbs-fixed.bin lib/corpus/verbs.bin lib/corpus/verbs-fixed.bin
 
 .PHONY: test
 
@@ -17,5 +17,5 @@ publish: gem
 
 corpus: $(corpus)
 
-$(corpus): corpus/adjectives.yaml corpus/nouns.yaml
+$(corpus): corpus/adjectives.yaml corpus/nouns.yaml corpus/adverbs.yaml corpus/verbs.yaml
 	ruby -Ilib corpus/generate.rb

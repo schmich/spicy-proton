@@ -1,21 +1,20 @@
 require 'seek'
 require 'header'
+require 'corpus'
 
 module Spicy
 end
 
 module Spicy::Disk
   module Files
+    @@files = {}
+
     def self.dir
       @@dir ||= File.join(File.dirname(__FILE__), 'corpus')
     end
 
-    def self.adjectives
-      @@adjectives ||= File.join(dir, 'adjectives-fixed.bin')
-    end
-
-    def self.nouns
-      @@nouns ||= File.join(dir, 'nouns-fixed.bin')
+    def self.corpus(type)
+      @@files[type] ||= File.join(dir, "#{type}-fixed.bin")
     end
   end
 
@@ -24,11 +23,9 @@ module Spicy::Disk
 
     def initialize(file_name)
       @file = File.open(file_name, 'rb')
-
       @cumulative = Spicy::Header.cumulative(@file)
       @min = @cumulative.keys.min
       @max = @cumulative.keys.max
-
       @origin = @file.pos
     end
 
@@ -45,6 +42,8 @@ module Spicy::Disk
   end
   
   class Corpus
+    include Spicy::Corpus
+
     private_class_method :new
 
     def self.use
@@ -64,19 +63,11 @@ module Spicy::Disk
       @lists.values.each(&:close)
     end
 
-    def adjective(*args)
-      generate(:adjectives, *args)
-    end
-
-    def noun(*args)
-      generate(:nouns, *args)
-    end
-
     private
 
     def generate(type, *args)
       @lists[type] ||= begin
-        WordList.new(Files.send(type))
+        WordList.new(Files.corpus(type))
       end
       @lists[type].word(*args)
     end

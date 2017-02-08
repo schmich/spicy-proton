@@ -1,21 +1,20 @@
 require 'seek'
 require 'header'
+require 'corpus'
 
 module Spicy
 end
 
 module Spicy::Memory
   module Files
+    @@files = {}
+
     def self.dir
       @@dir ||= File.join(File.dirname(__FILE__), 'corpus')
     end
 
-    def self.adjectives
-      @@adjectives ||= File.join(dir, 'adjectives.bin')
-    end
-
-    def self.nouns
-      @@nouns ||= File.join(dir, 'nouns.bin')
+    def self.corpus(type)
+      @@files[type] ||= File.join(dir, "#{type}.bin")
     end
   end
 
@@ -36,25 +35,45 @@ module Spicy::Memory
         @words[index]
       end
     end
+
+    def words
+      @words
+    end
   end
 
   class Corpus
+    include Spicy::Corpus
+
     def initialize
-      dir = File.dirname(__FILE__)
-      @adjectives = WordList.new(Files.adjectives)
-      @nouns = WordList.new(Files.nouns)
+      @lists = {}
     end
 
-    def adjective(*args)
-      @adjectives.word(*args)
+    def adjectives
+      list(:adjectives).words
     end
 
-    def noun(*args)
-      @nouns.word(*args)
+    def nouns
+      list(:nouns).words
     end
 
-    def pair(separator = '-')
-      "#{self.adjective}#{separator}#{self.noun}"
+    def adverbs
+      list(:adverbs).words
+    end
+
+    def verbs
+      list(:verbs).words
+    end
+
+    private
+
+    def generate(type, *args)
+      list(type).word(*args)
+    end
+
+    def list(type)
+      @lists[type] ||= begin
+        WordList.new(Files.corpus(type))
+      end
     end
   end
 end

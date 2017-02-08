@@ -3,12 +3,10 @@ require 'minitest/autorun'
 require './lib/spicy-proton'
 
 class Tests < Minitest::Test
-  def test_adjective
-    corpus { |c| assert_generated(c, :adjective) }
-  end
-
-  def test_noun
-    corpus { |c| assert_generated(c, :noun) }
+  def test_single_word
+    types.each do |type|
+      corpus { |c| assert_generated(c, type) }
+    end
   end
 
   def test_pair
@@ -31,11 +29,17 @@ class Tests < Minitest::Test
 
   def test_format
     corpus { |c|
-      fmt = c.format('%a:1%n:2')
+      fmt = c.format('%a1%n2%b3%v4')
       assert_string(fmt)
-      assert(fmt.length >= 7)
-      assert(fmt.index(':1') > 0)
-      assert(fmt.index(':2') > fmt.index(':1'))
+      assert(fmt.length >= 12)
+      assert(fmt.index('1') > 0)
+      assert(fmt.index('2') > fmt.index('1'))
+      assert(fmt.index('3') > fmt.index('2'))
+      assert(fmt.index('4') > fmt.index('3'))
+      assert_nil(fmt.index('%a'))
+      assert_nil(fmt.index('%n'))
+      assert_nil(fmt.index('%b'))
+      assert_nil(fmt.index('%v'))
       fmt = c.format('%%')
       assert_equal('%', fmt)
       fmt = c.format('%z')
@@ -44,100 +48,105 @@ class Tests < Minitest::Test
   end
 
   def test_min
-    corpus { |c|
-      assert_generated(c, :noun, min: 8)
-      assert_generated(c, :adjective, min: 8)
-    }
+    types.each do |type|
+      corpus { |c|
+        assert_generated(c, type, min: 8)
+      }
+    end
   end
 
   def test_max
-    corpus { |c|
-      assert_generated(c, :noun, max: 4)
-      assert_generated(c, :adjective, max: 4)
-    }
+    types.each do |type|
+      corpus { |c|
+        assert_generated(c, type, max: 4)
+      }
+    end
   end
 
   def test_min_max
-    corpus { |c|
-      assert_generated(c, :noun, min: 3, max: 4)
-      assert_generated(c, :adjective, min: 3, max: 4)
-    }
+    types.each do |type|
+      corpus { |c|
+        assert_generated(c, type, min: 3, max: 4)
+      }
+    end
   end
 
   def test_invert_min_max
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         assert_error(ArgumentError) do
           c.send(type, min: 2, max: 1)
         end
-      end
-    }
+      }
+    end
   end
 
   def test_bad_min
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         word = c.send(type, min: 1000)
         assert_nil(word)
-      end
-    }
+      }
+    end
   end
 
   def test_bad_max
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         word = c.send(type, max: 0)
         assert_nil(word)
-      end
-    }
+      }
+    end
   end
 
   def test_large_range
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         word = c.send(type, min: 0, max: 10000)
         assert_string(word)
-      end
-    }
+      }
+    end
   end
 
   def test_equal_min_max
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         word = c.send(type, min: 6, max: 6)
         assert_string(word)
         assert_equal(6, word.length)
-      end
-    }
+      }
+    end
   end
 
   def test_length
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         word = c.send(type, length: 4)
         assert_string(word)
         assert_equal(4, word.length)
-      end
-    }
+      }
+    end
   end
 
   def test_length_min_max
-    corpus { |c|
-      [:adjective, :noun].each do |type|
+    types.each do |type|
+      corpus { |c|
         assert_error(ArgumentError) do
           c.send(type, length: 5, min: 4)
         end
         assert_error(ArgumentError) do
           c.send(type, length: 5, max: 7)
         end
-      end
-    }
+      }
+    end
   end
 
   def test_word_lists
     c = Spicy::Proton.new
     refute(c.adjectives.empty?)
     refute(c.nouns.empty?)
+    refute(c.adverbs.empty?)
+    refute(c.verbs.empty?)
   end
 
   private
@@ -145,6 +154,10 @@ class Tests < Minitest::Test
   def corpus(&block)
     block.call(Spicy::Proton)
     block.call(Spicy::Proton.new)
+  end
+
+  def types
+    [:adjective, :noun, :adverb, :verb]
   end
 
   def assert_error(type, &block)

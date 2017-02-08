@@ -2,7 +2,7 @@ require 'yaml'
 require 'disk-corpus'
 require 'memory-corpus'
 
-['adjectives.yaml', 'nouns.yaml'].each do |source|
+['adjectives.yaml', 'nouns.yaml', 'adverbs.yaml', 'verbs.yaml'].each do |source|
   dir = File.dirname(__FILE__)
   words = YAML.load_file(File.join(dir, source))
   groups = Hash[words.group_by(&:length).sort_by(&:first)]
