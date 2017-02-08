@@ -7,7 +7,7 @@ if !file || !file.end_with?('.json')
   exit 1
 end
 
-words = JSON.load(File.read(file)).sort_by { |w| [w.length, w] }
+words = JSON.load(File.read(file)).uniq.sort_by { |w| [w.length, w] }
 yaml = YAML.dump(words)
 
 out = File.basename(file, '.json') + '.yaml'
