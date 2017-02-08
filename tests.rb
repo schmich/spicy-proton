@@ -4,16 +4,16 @@ require './lib/spicy-proton'
 
 class Tests < Minitest::Test
   def test_adjective
-    generators { |gen| assert_generated(gen, :adjective) }
+    corpus { |c| assert_generated(c, :adjective) }
   end
 
   def test_noun
-    generators { |gen| assert_generated(gen, :noun) }
+    corpus { |c| assert_generated(c, :noun) }
   end
 
   def test_pair
-    generators { |gen|
-      pair = gen.pair
+    corpus { |c|
+      pair = c.pair
       assert_string(pair)
       assert(pair.length >= 3)
       assert(pair.index('-') > 0)
@@ -21,8 +21,8 @@ class Tests < Minitest::Test
   end
 
   def test_pair_separator
-    generators { |gen|
-      pair = gen.pair(':')
+    corpus { |c|
+      pair = c.pair(':')
       assert_string(pair)
       assert(pair.length >= 3)
       assert(pair.index(':') > 0)
@@ -30,81 +30,81 @@ class Tests < Minitest::Test
   end
 
   def test_format
-    generators { |gen|
-      fmt = gen.format('%a:1%n:2')
+    corpus { |c|
+      fmt = c.format('%a:1%n:2')
       assert_string(fmt)
       assert(fmt.length >= 7)
       assert(fmt.index(':1') > 0)
       assert(fmt.index(':2') > fmt.index(':1'))
-      fmt = gen.format('%%')
+      fmt = c.format('%%')
       assert_equal('%', fmt)
-      fmt = gen.format('%z')
+      fmt = c.format('%z')
       assert_equal('%z', fmt)
     }
   end
 
   def test_min
-    generators { |gen|
-      assert_generated(gen, :noun, min: 8)
-      assert_generated(gen, :adjective, min: 8)
+    corpus { |c|
+      assert_generated(c, :noun, min: 8)
+      assert_generated(c, :adjective, min: 8)
     }
   end
 
   def test_max
-    generators { |gen|
-      assert_generated(gen, :noun, max: 4)
-      assert_generated(gen, :adjective, max: 4)
+    corpus { |c|
+      assert_generated(c, :noun, max: 4)
+      assert_generated(c, :adjective, max: 4)
     }
   end
 
   def test_min_max
-    generators { |gen|
-      assert_generated(gen, :noun, min: 3, max: 4)
-      assert_generated(gen, :adjective, min: 3, max: 4)
+    corpus { |c|
+      assert_generated(c, :noun, min: 3, max: 4)
+      assert_generated(c, :adjective, min: 3, max: 4)
     }
   end
 
   def test_invert_min_max
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
         assert_error(ArgumentError) do
-          gen.send(type, min: 2, max: 1)
+          c.send(type, min: 2, max: 1)
         end
       end
     }
   end
 
   def test_bad_min
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
-        word = gen.send(type, min: 1000)
+        word = c.send(type, min: 1000)
         assert_nil(word)
       end
     }
   end
 
   def test_bad_max
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
-        word = gen.send(type, max: 0)
+        word = c.send(type, max: 0)
         assert_nil(word)
       end
     }
   end
 
   def test_large_range
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
-        word = gen.send(type, min: 0, max: 10000)
+        word = c.send(type, min: 0, max: 10000)
         assert_string(word)
       end
     }
   end
 
   def test_equal_min_max
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
-        word = gen.send(type, min: 6, max: 6)
+        word = c.send(type, min: 6, max: 6)
         assert_string(word)
         assert_equal(6, word.length)
       end
@@ -112,9 +112,9 @@ class Tests < Minitest::Test
   end
 
   def test_length
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
-        word = gen.send(type, length: 4)
+        word = c.send(type, length: 4)
         assert_string(word)
         assert_equal(4, word.length)
       end
@@ -122,13 +122,13 @@ class Tests < Minitest::Test
   end
 
   def test_length_min_max
-    generators { |gen|
+    corpus { |c|
       [:adjective, :noun].each do |type|
         assert_error(ArgumentError) do
-          gen.send(type, length: 5, min: 4)
+          c.send(type, length: 5, min: 4)
         end
         assert_error(ArgumentError) do
-          gen.send(type, length: 5, max: 7)
+          c.send(type, length: 5, max: 7)
         end
       end
     }
@@ -136,7 +136,7 @@ class Tests < Minitest::Test
 
   private
 
-  def generators(&block)
+  def corpus(&block)
     block.call(Spicy::Proton)
     block.call(Spicy::Proton.new)
   end
