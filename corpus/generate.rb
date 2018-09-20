@@ -1,10 +1,9 @@
-require 'yaml'
 require 'disk-corpus'
 require 'memory-corpus'
 
-['adjectives.yaml', 'nouns.yaml', 'adverbs.yaml', 'verbs.yaml'].each do |source|
+['adjectives.txt', 'nouns.txt', 'adverbs.txt', 'verbs.txt'].each do |source|
   dir = File.dirname(__FILE__)
-  words = YAML.load_file(File.join(dir, source))
+  words = IO.readlines(File.join(dir, source)).map(&:strip)
   groups = Hash[words.group_by(&:length).sort_by(&:first)]
 
   min = groups.keys.min
@@ -34,7 +33,7 @@ require 'memory-corpus'
     header.cumulative << count
   end
 
-  fixed_file = File.join(out_dir, File.basename(source, '.yaml') + '-fixed.bin')
+  fixed_file = File.join(out_dir, File.basename(source, '.txt') + '-fixed.bin')
   File.open(fixed_file, 'wb') do |w|
     width = words.keys.max
     header.write(w)
@@ -44,7 +43,7 @@ require 'memory-corpus'
     end
   end
 
-  packed_file = File.join(out_dir, File.basename(source, '.yaml') + '.bin')
+  packed_file = File.join(out_dir, File.basename(source, '.txt') + '.bin')
   File.open(packed_file, 'wb') do |w|
     header.write(w)
     w.write(words.values.join("\0"))
