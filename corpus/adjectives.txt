@@ -261,7 +261,6 @@ ample
 angry
 antic
 ashen
-asian
 attic
 atune
 audio
@@ -281,7 +280,6 @@ bawdy
 beady
 beefy
 beige
-black
 bland
 blank
 bleak
@@ -317,11 +315,9 @@ comic
 corny
 crash
 crazy
-cream
 crisp
 crude
 cruel
-cuban
 cubic
 curly
 daily
@@ -337,7 +333,6 @@ drunk
 dummy
 dusky
 dusty
-dutch
 eager
 eared
 early
@@ -416,7 +411,6 @@ inert
 inner
 ionic
 irate
-irish
 ivory
 jazzy
 jerky
@@ -520,7 +514,6 @@ privy
 prone
 proud
 puffy
-queer
 quick
 quiet
 rabid
@@ -532,7 +525,6 @@ ready
 reedy
 regal
 renal
-rican
 right
 rigid
 risky
@@ -647,7 +639,6 @@ warty
 waxen
 weary
 weird
-welsh
 white
 whole
 wider
@@ -787,7 +778,6 @@ cubist
 custom
 cutest
 dainty
-danish
 dapper
 darker
 deadly
@@ -823,7 +813,6 @@ edible
 effete
 eldest
 entire
-ethnic
 exempt
 exotic
 expert
@@ -882,7 +871,6 @@ garish
 gauche
 genial
 gentle
-german
 gifted
 glassy
 global
@@ -922,7 +910,6 @@ humane
 humble
 hungry
 inborn
-indian
 indigo
 indoor
 infant
@@ -937,7 +924,6 @@ inward
 ironic
 jagged
 jaunty
-jewish
 jocose
 jocund
 jovial
@@ -948,7 +934,6 @@ jutish
 kinder
 kindly
 knotty
-korean
 kosher
 labile
 larger
@@ -1051,7 +1036,6 @@ placid
 planar
 pliant
 poetic
-polish
 polite
 poorer
 popish
@@ -1069,7 +1053,6 @@ public
 purest
 purple
 quaint
-racial
 radial
 ragged
 rakish
@@ -1135,7 +1118,6 @@ single
 skiddy
 skimpy
 skinny
-slavic
 sleepy
 slight
 sloppy
@@ -1195,10 +1177,8 @@ sweaty
 swingy
 swivel
 sylvan
-syrian
 syrupy
 taller
-taoist
 tawdry
 teensy
 tender
@@ -1297,7 +1277,6 @@ advance
 adverse
 aerobic
 affable
-african
 allegro
 amateur
 amatory
@@ -1310,7 +1289,6 @@ angular
 animate
 anionic
 antique
-arabian
 arcaded
 archaic
 arclike
@@ -1338,7 +1316,6 @@ bedfast
 belated
 belgian
 beloved
-bengali
 bestial
 bifocal
 biggest
@@ -1356,7 +1333,6 @@ breathy
 briefer
 brimful
 brisker
-british
 brittle
 broader
 bucolic
@@ -1364,7 +1340,6 @@ bugeyed
 builtin
 bullish
 buoyant
-burmese
 busiest
 buttery
 byronic
@@ -1472,7 +1447,6 @@ elegiac
 elusive
 eminent
 emptier
-english
 erratic
 erudite
 eternal
@@ -1500,7 +1474,6 @@ fevered
 fictive
 figural
 finicky
-finnish
 fittest
 fitting
 flemish
@@ -1562,7 +1535,6 @@ haughty
 healthy
 heathen
 heavier
-hebraic
 helluva
 helpful
 heretic
@@ -1592,10 +1564,6 @@ intimal
 invalid
 inverse
 irksome
-islamic
-israeli
-italian
-ithacan
 jeweled
 jittery
 jocular
@@ -1605,7 +1573,6 @@ kindest
 kinetic
 knowing
 languid
-laotian
 largest
 lasting
 lateral
@@ -1655,7 +1622,6 @@ medical
 meekest
 melodic
 melting
-mexican
 miasmal
 migrant
 mimetic
@@ -1667,7 +1633,6 @@ moneyed
 monkish
 monthly
 moonlit
-moorish
 movable
 mundane
 musical
@@ -1679,7 +1644,6 @@ naughty
 nearest
 neatest
 nebular
-negroid
 neutral
 newborn
 nighted
@@ -1708,7 +1672,6 @@ orbital
 orderly
 organic
 osmotic
-ottoman
 outback
 outdoor
 outside
@@ -1732,7 +1695,6 @@ pensive
 peppery
 perfect
 permian
-persian
 pimpled
 pincian
 piquant
@@ -1799,13 +1761,11 @@ routine
 rubbery
 runaway
 rundown
-russian
 sainted
 salable
 salient
 satiric
 scarlet
-scotian
 scrawny
 secular
 seeming
@@ -1822,7 +1782,6 @@ shapely
 sharper
 shivery
 shorter
-siamese
 sickish
 silvery
 similar
@@ -1833,7 +1792,6 @@ sizable
 skilful
 skilled
 slatted
-slavish
 slender
 slimmer
 slivery
@@ -1848,7 +1806,6 @@ songful
 sopping
 soulful
 sounder
-spanish
 spatial
 special
 spidery
@@ -1877,7 +1834,6 @@ supreme
 surface
 suspect
 swarthy
-swedish
 sweeter
 swollen
 tactful
@@ -1897,7 +1853,6 @@ thinner
 thirsty
 thrifty
 throaty
-tibetan
 tiniest
 titanic
 titular
@@ -1908,7 +1863,6 @@ tougher
 trivial
 tubular
 tuneful
-turkish
 twofold
 typical
 unaided
@@ -1984,7 +1938,6 @@ womanly
 worldly
 wornout
 wouldbe
-yiddish
 younger
 aberrant
 abnormal
@@ -2007,14 +1960,11 @@ affluent
 agrarian
 airborne
 alarmist
-albanian
-algerian
 alkaline
 allergic
 almighty
 alveolar
 amenable
-american
 amicable
 ammoniac
 analytic
@@ -2027,20 +1977,16 @@ anorthic
 anterior
 apparent
 arboreal
-armenian
 aromatic
 arrogant
 arterial
 artistic
-assyrian
 athenian
 athletic
 atlantic
 atrophic
 atypical
 augustan
-austrian
-autistic
 autumnal
 backward
 baffling
@@ -2071,7 +2017,6 @@ broadest
 brocaded
 brownish
 buccolic
-buddhist
 callable
 canadian
 canonist
@@ -2079,14 +2024,12 @@ capellan
 cardinal
 carefree
 careworn
-catholic
 cellular
 cerebral
 cerulean
 charming
 cheerful
 chemical
-cherokee
 childish
 chillier
 chockful
@@ -2190,8 +2133,6 @@ esthetic
 ethereal
 etruscan
 euphoric
-eurasian
-european
 eventual
 everyday
 exciting
@@ -2277,7 +2218,6 @@ handsome
 happiest
 harmonic
 haunting
-hawaiian
 heavenly
 heaviest
 hegelian
@@ -2339,7 +2279,6 @@ isotonic
 isotopic
 jacobean
 jacobite
-japanese
 jewelled
 jubilant
 judicial
@@ -2437,7 +2376,6 @@ operatic
 opposite
 optional
 ordinary
-oriental
 original
 ornraier
 orthodox
@@ -2470,7 +2408,6 @@ peculiar
 pedantic
 periodic
 personal
-peruvian
 perverse
 petulant
 phonemic
@@ -2554,7 +2491,6 @@ sanitary
 sardonic
 sauterne
 scornful
-scottish
 scraggly
 scratchy
 screechy
@@ -2571,9 +2507,7 @@ shopworn
 shortest
 shrewish
 shuddery
-siberian
 sibilant
-sicilian
 sidelong
 silicate
 silliest
@@ -2622,7 +2556,6 @@ stubborn
 stunning
 suburban
 succinct
-sudanese
 suhthuhn
 suitable
 sunbaked
@@ -2668,7 +2601,6 @@ trigonal
 tropical
 trusting
 truthful
-tunisian
 tuxedoed
 ultimate
 unabated
@@ -2753,7 +2685,6 @@ wrongful
 youngest
 youngish
 youthful
-yugoslav
 zodiacal
 abdominal
 abhorrent
@@ -2770,7 +2701,6 @@ aforesaid
 aggregate
 agonizing
 agreeable
-alcoholic
 algebraic
 allegoric
 allocable
@@ -2830,7 +2760,6 @@ bombproof
 botanical
 botulinal
 brahmsian
-brazilian
 brightest
 brilliant
 britannic
@@ -2845,14 +2774,12 @@ calvinist
 cartesian
 cassocked
 catalytic
-caucasian
 causative
 ceartaine
 celestial
 censorial
 chainlike
 childlike
-christian
 chromatic
 cinematic
 classical
@@ -2861,7 +2788,6 @@ climactic
 cognitive
 cognizant
 colloidal
-colombian
 combatant
 commonest
 communist
@@ -2871,10 +2797,8 @@ concerted
 conducive
 confident
 confluent
-confucian
 confusing
 congenial
-congolese
 congruent
 consonant
 continual
@@ -2918,7 +2842,6 @@ dissident
 divergent
 divisible
 doctrinal
-dominican
 downright
 dreamlike
 duplicate
@@ -3015,7 +2938,6 @@ homicidal
 honorable
 horselike
 hoydenish
-hungarian
 hunkerish
 hydraulic
 hyperemic
@@ -3135,7 +3057,6 @@ normative
 northeast
 northerly
 northwest
-norwegian
 nostalgic
 numerical
 nutritive
@@ -3157,7 +3078,6 @@ overblown
 overeager
 overnight
 oversized
-pakistani
 palatable
 palladian
 panoramic
@@ -3339,7 +3259,6 @@ trichrome
 truculent
 turbulent
 turquoise
-ukrainian
 unabashed
 unadorned
 unalloyed
@@ -3484,7 +3403,6 @@ astringent
 asymmetric
 asymptotic
 attractive
-australian
 autocratic
 automotive
 babylonian
@@ -3560,7 +3478,6 @@ definitive
 deliberate
 delightful
 delinquent
-democratic
 dependable
 deplorable
 depressing
@@ -3685,7 +3602,6 @@ indicative
 indiscreet
 indistinct
 individual
-indonesian
 industrial
 ineligible
 inevitable
@@ -3814,13 +3730,11 @@ persistent
 persuasive
 petrarchan
 phenomenal
-philippine
 phonologic
 photogenic
 pokerfaced
 polynomial
 pontifical
-portuguese
 possessive
 predictive
 preferable
@@ -3854,7 +3768,6 @@ remarkable
 remorseful
 repetitive
 repressive
-republican
 resounding
 respectful
 respective
@@ -4029,10 +3942,8 @@ unwrinkled
 unyielding
 upstanding
 varitinted
-venezuelan
 vernacular
 veterinary
-vietnamese
 vindictive
 vocational
 volumetric
@@ -4157,8 +4068,6 @@ enforceable
 enthralling
 epicyclical
 equidistant
-europeanish
-evangelical
 evaporative
 everlasting
 exceptional
@@ -4249,7 +4158,6 @@ irrevocable
 justifiable
 kinesthetic
 legislative
-libertarian
 lightweight
 lilliputian
 luminescent
@@ -4689,14 +4597,12 @@ paramagnetic
 paramilitary
 pathological
 periphrastic
-persianesque
 philological
 photographic
 planoconcave
 postgraduate
 preferential
 prepubescent
-presbyterian
 prescriptive
 presidential
 professional
@@ -4719,7 +4625,6 @@ researchable
 rooseveltian
 satisfactory
 scandalizing
-scandinavian
 scarecrowish
 selfeffacing
 semicircular
