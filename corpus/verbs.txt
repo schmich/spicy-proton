@@ -120,7 +120,6 @@ sat
 saw
 say
 sea
-sed
 see
 set
 sew

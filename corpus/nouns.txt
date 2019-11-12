@@ -301,7 +301,6 @@ acre
 aeon
 ague
 aide
-aimo
 ally
 alto
 alum
@@ -900,7 +899,6 @@ odor
 omen
 ooze
 open
-orgy
 oval
 oven
 oxen
@@ -998,7 +996,6 @@ reel
 rein
 rent
 rest
-rewt
 rice
 rich
 ride
@@ -1163,6 +1160,7 @@ toil
 tole
 toll
 tomb
+tome
 tone
 tool
 toto
@@ -1224,7 +1222,6 @@ wash
 wasp
 watt
 wave
-wbai
 wear
 week
 weir
@@ -1635,7 +1632,6 @@ farce
 fault
 fauna
 favor
-feare
 feast
 feint
 feler
@@ -1697,7 +1693,6 @@ furor
 gable
 gamma
 gamut
-gasse
 gauge
 gauze
 gazer
@@ -2164,7 +2159,6 @@ septa
 serge
 serum
 servo
-setsw
 setup
 sewer
 shack
@@ -2213,7 +2207,6 @@ slack
 slang
 slant
 slate
-slave
 sleep
 sleet
 slice
@@ -2337,7 +2330,6 @@ swoop
 sword
 synod
 syrup
-tabac
 table
 taboo
 taffy
@@ -5215,7 +5207,6 @@ skylark
 skyline
 skywave
 sladang
-slavery
 slaying
 sleeper
 slicker
@@ -9619,7 +9610,6 @@ endorsement
 enforcement
 engineering
 enlargement
-enslavement
 entertainer
 entranceway
 enumeration
