@@ -287,7 +287,6 @@ blind
 blond
 bluff
 blunt
-booby
 brash
 brave
 brief
@@ -474,7 +473,6 @@ muddy
 muggy
 murky
 naive
-naked
 nasal
 nasty
 natal
@@ -1449,7 +1447,6 @@ erratic
 erudite
 eternal
 ethical
-eugenic
 evasive
 evident
 extinct
@@ -1459,7 +1456,6 @@ factual
 fairest
 familar
 fancier
-fascist
 fastest
 fateful
 fearful
