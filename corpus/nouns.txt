@@ -1965,7 +1965,6 @@ olive
 onion
 onset
 opera
-opium
 orbit
 order
 organ
@@ -1981,7 +1980,6 @@ paint
 palsy
 panel
 panic
-pansy
 paper
 party
 paste
@@ -2039,7 +2037,6 @@ pound
 power
 prank
 price
-prick
 pride
 prime
 print
@@ -3322,7 +3319,6 @@ oracle
 orange
 orator
 ordeal
-orgasm
 orgone
 origin
 orphan
@@ -4025,7 +4021,6 @@ barrack
 barrage
 barrier
 baseman
-bastard
 bastion
 bathtub
 battery
