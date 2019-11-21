@@ -138,7 +138,6 @@ just
 keen
 kind
 lacy
-lame
 late
 lazy
 lean
@@ -313,7 +312,6 @@ cocky
 comic
 corny
 crash
-crazy
 crisp
 crude
 cruel
@@ -914,7 +912,6 @@ infant
 infirm
 inland
 innate
-insane
 inside
 intact
 intent
@@ -1590,7 +1587,6 @@ lovable
 lowdown
 luckier
 lumpish
-lunatic
 lustful
 lyrical
 macabre
@@ -1895,7 +1891,6 @@ upriver
 urinary
 useable
 utopian
-vagrant
 vaguest
 valiant
 varying
@@ -2306,7 +2301,6 @@ lutheran
 magnetic
 majestic
 malposed
-maniacal
 manifest
 manifold
 mannered
@@ -2863,7 +2857,6 @@ enigmatic
 enjoyable
 enzymatic
 ephemeral
-epileptic
 episcopal
 equitable
 equivocal
@@ -3127,7 +3120,6 @@ prostrate
 protozoan
 proximate
 psychical
-psychotic
 ptolemaic
 pubescent
 pulmonary
@@ -4335,7 +4327,6 @@ unbelieving
 unblemished
 unbreakable
 uncertified
-unchristian
 uncluttered
 uncomforted
 uncommitted
@@ -4823,7 +4814,6 @@ reimburseable
 reprehensible
 retrogressive
 revolutionary
-schizophrenic
 schoolgirlish
 seismological
 semiautomatic

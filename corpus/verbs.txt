@@ -3762,7 +3762,6 @@ enlargd
 enlarge
 enlists
 enraged
-enslave
 ensuing
 ensures
 entails
@@ -5483,7 +5482,6 @@ credited
 creeping
 cremated
 cringing
-crippled
 crooning
 cropping
 crossing
@@ -5698,7 +5696,6 @@ enmeshed
 enquired
 enriched
 enrolled
-enslaved
 ensuring
 entering
 enticing
@@ -7191,7 +7188,6 @@ corroding
 corrupted
 counseled
 countered
-crippling
 criticize
 crouching
 crucified
@@ -9936,7 +9932,6 @@ underestimate
 understanding
 biosynthesized
 characterizing
-christianizing
 circumscribing
 counterbalance
 countervailing
