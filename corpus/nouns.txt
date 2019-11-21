@@ -40,7 +40,6 @@ box
 boy
 bud
 bug
-bum
 bun
 buy
 cab
@@ -1682,7 +1681,6 @@ frame
 franc
 frank
 fraud
-freak
 friar
 frock
 front
@@ -1789,7 +1787,6 @@ humor
 hunch
 hurry
 hyena
-hymen
 icing
 ideal
 idiom
@@ -2885,7 +2882,6 @@ falcon
 family
 famine
 farmer
-fatboy
 father
 fathuh
 faucet
@@ -3190,7 +3186,6 @@ making
 malady
 malice
 mammal
-maniac
 manila
 manner
 mantel
@@ -4276,7 +4271,6 @@ crewcut
 crewmen
 cricket
 crimson
-cripple
 critter
 crowing
 crudity
@@ -4645,7 +4639,6 @@ integer
 interim
 interne
 invader
-invalid
 inverse
 iocsixf
 iocsixg
@@ -8146,7 +8139,6 @@ sidelight
 signaling
 signature
 signboard
-simpleton
 sincerity
 situation
 slanderer
@@ -9097,7 +9089,6 @@ provenance
 providence
 psychiatry
 psychology
-psychopath
 psychopomp
 publishing
 punishment
@@ -9902,7 +9893,6 @@ restitution
 restoration
 restriction
 retaliation
-retardation
 retribution
 retrovision
 revaluation
@@ -10279,7 +10269,6 @@ nondefeatist
 nonogenarian
 noradrenalin
 notification
-nymphomaniac
 obliteration
 oceanography
 oneupmanship
@@ -10637,7 +10626,6 @@ reverberation
 reversibility
 revolutionary
 romanticizing
-schizophrenic
 sedimentation
 sequestration
 socialization
