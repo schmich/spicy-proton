@@ -2,7 +2,6 @@ aft
 apt
 bad
 big
-bum
 con
 coy
 dam
@@ -10,7 +9,6 @@ dim
 dry
 due
 far
-fat
 fit
 hip
 hot
@@ -28,7 +26,6 @@ net
 new
 non
 odd
-old
 ole
 own
 pan
@@ -79,7 +76,6 @@ cosy
 cozy
 curt
 cute
-damn
 damp
 dang
 dank
@@ -95,7 +91,6 @@ down
 drab
 dual
 dull
-dumb
 east
 easy
 edgy
@@ -283,7 +278,6 @@ bland
 blank
 bleak
 blind
-blond
 bluff
 blunt
 brash
@@ -292,12 +286,10 @@ brief
 brisk
 broad
 broke
-brown
 brute
 bulky
 bully
 burly
-buxom
 cagey
 canny
 cheap
@@ -422,7 +414,6 @@ laden
 lanky
 large
 later
-latin
 leafy
 leaky
 legal
@@ -446,7 +437,6 @@ lucky
 lumpy
 lunar
 lurid
-lusty
 lyric
 magic
 major
@@ -602,7 +592,6 @@ tawny
 tense
 tepid
 terse
-texan
 thick
 tidal
 tight
@@ -635,7 +624,6 @@ warty
 waxen
 weary
 weird
-white
 whole
 wider
 windy
@@ -714,7 +702,6 @@ bridal
 bright
 bronze
 broody
-browny
 brushy
 brutal
 bubbly
@@ -929,7 +916,6 @@ jutish
 kinder
 kindly
 knotty
-kosher
 labile
 larger
 larval
@@ -1053,7 +1039,6 @@ rakish
 random
 realer
 recent
-redder
 remote
 rental
 resiny
@@ -1088,8 +1073,6 @@ secret
 secure
 sedate
 select
-senile
-senior
 septic
 serene
 serial
@@ -1247,7 +1230,6 @@ weaker
 weekly
 wicked
 widest
-wifely
 wintry
 wisest
 wobbly
@@ -1261,7 +1243,6 @@ worthy
 yankee
 yearly
 yeller
-yellow
 yongst
 abusive
 abysmal
@@ -1300,14 +1281,12 @@ balding
 baleful
 baneful
 bangish
-baptist
 baroque
 bashful
 bearded
 bearish
 bedfast
 belated
-belgian
 beloved
 bestial
 bifocal
@@ -1351,7 +1330,6 @@ ceramic
 certain
 chaotic
 cheaper
-chinese
 chipper
 choctaw
 chromic
@@ -1498,7 +1476,6 @@ genuine
 germane
 ghastly
 ghostly
-girlish
 gleeful
 glottal
 gnarled
@@ -1543,7 +1520,6 @@ immense
 immoral
 inboard
 inexact
-infidel
 inhuman
 initial
 inshore
@@ -1552,7 +1528,6 @@ instant
 intense
 interim
 intimal
-invalid
 inverse
 irksome
 jeweled
@@ -1888,7 +1863,6 @@ unstuck
 unusual
 upright
 upriver
-urinary
 useable
 utopian
 vaguest
@@ -1923,7 +1897,6 @@ willowy
 winsome
 wishful
 wistful
-womanly
 worldly
 wornout
 wouldbe
@@ -1994,7 +1967,6 @@ binomial
 biologic
 biracial
 birdlike
-blackest
 blissful
 blustery
 boeotian
@@ -2350,7 +2322,6 @@ neuronal
 neurotic
 newfound
 nonionic
-nonwhite
 northern
 nutrient
 obedient

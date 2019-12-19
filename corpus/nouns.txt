@@ -37,7 +37,6 @@ bod
 bop
 bow
 box
-boy
 bud
 bug
 bun
@@ -316,7 +315,6 @@ aunt
 aura
 auto
 axle
-baby
 back
 bail
 bait
@@ -392,7 +390,6 @@ burn
 burr
 bush
 bust
-butt
 buzz
 cafe
 cage
@@ -472,7 +469,6 @@ cure
 cusp
 czar
 dale
-dame
 dark
 darn
 dash
@@ -628,7 +624,6 @@ germ
 gibe
 gift
 gilt
-girl
 gist
 give
 glee
@@ -699,7 +694,6 @@ hill
 hilt
 hint
 hive
-hobo
 hold
 hole
 holy
@@ -767,7 +761,6 @@ know
 kola
 lace
 lack
-lady
 lake
 lamb
 lamp
@@ -820,7 +813,6 @@ lord
 lore
 love
 luck
-lucy
 lull
 lulu
 lump
@@ -832,7 +824,6 @@ maid
 mail
 main
 make
-male
 mall
 malt
 mama
@@ -1232,7 +1223,6 @@ whir
 whit
 whiz
 wick
-wife
 will
 wilt
 wind
@@ -1245,7 +1235,6 @@ wisp
 wlib
 wohd
 wolf
-womb
 wood
 wool
 word
@@ -1376,7 +1365,6 @@ boast
 bobby
 bogey
 bongo
-booby
 boost
 booth
 booty
@@ -1596,12 +1584,10 @@ drone
 drove
 drunk
 dryer
-dwarf
 dying
 eagle
 earth
 easel
-ebony
 edema
 elbow
 elder
@@ -1735,7 +1721,6 @@ grief
 grill
 grist
 groan
-groin
 groom
 group
 grove
@@ -1753,7 +1738,6 @@ gusto
 gypsy
 habit
 hande
-harem
 haste
 hatch
 haunt
@@ -1972,9 +1956,7 @@ oxide
 ozone
 pacer
 paean
-pagan
 paint
-palsy
 panel
 panic
 paper
@@ -2071,7 +2053,6 @@ radar
 radii
 radio
 raise
-rajah
 rally
 ranch
 range
@@ -2115,7 +2096,6 @@ rummy
 rumor
 rupee
 russe
-saami
 saber
 sable
 sabre
@@ -2350,7 +2330,6 @@ thief
 thigh
 thing
 third
-thong
 thorn
 throw
 thumb
@@ -2462,11 +2441,8 @@ whirl
 white
 whole
 whoop
-widow
 width
 witch
-woman
-women
 world
 worry
 worth
@@ -2545,7 +2521,6 @@ asylum
 attack
 attire
 author
-autism
 autumn
 avenue
 aviary
@@ -2625,7 +2600,6 @@ brandy
 brawle
 brazil
 breach
-breast
 breath
 breeze
 bridal
@@ -2845,7 +2819,6 @@ editor
 effect
 effort
 eluate
-embryo
 empire
 employ
 enamel
@@ -2892,7 +2865,6 @@ feeder
 feller
 fellow
 felony
-female
 fender
 fennel
 fervor
@@ -3067,7 +3039,6 @@ icebox
 icicle
 impact
 import
-incest
 income
 incubi
 indium
@@ -3214,7 +3185,6 @@ median
 medium
 medley
 melody
-member
 memoir
 memory
 menace
@@ -3316,7 +3286,6 @@ orator
 ordeal
 orgone
 origin
-orphan
 osmium
 ouster
 outcry
@@ -3371,7 +3340,6 @@ penman
 penury
 people
 pepper
-period
 permit
 person
 pestle
@@ -4548,7 +4516,6 @@ grenade
 grimace
 grizzly
 grocery
-groping
 growing
 grumble
 gunfire
@@ -4609,7 +4576,6 @@ hostler
 housing
 humming
 hunting
-husband
 hustler
 hutment
 hyaline
@@ -4625,7 +4591,6 @@ impulse
 incense
 incline
 inertia
-infancy
 infarct
 inferno
 infield
@@ -4691,7 +4656,6 @@ leakage
 leasure
 leather
 lecture
-leftist
 legatee
 leisure
 lending
@@ -4699,7 +4663,6 @@ leprosy
 letting
 lexicon
 liaison
-liberal
 liberty
 library
 license
@@ -4765,7 +4728,6 @@ megaton
 melange
 melting
 memento
-menfolk
 mention
 mercury
 merging
@@ -5103,7 +5065,6 @@ roundup
 routine
 royalty
 rubbish
-rubdown
 ruffian
 runaway
 rundown
@@ -5486,7 +5447,6 @@ wetting
 whiskey
 whisper
 whistle
-widower
 wielder
 wildcat
 william
@@ -5495,8 +5455,6 @@ wingman
 woomera
 wording
 workday
-workman
-workmen
 workout
 worship
 worsted
@@ -9805,7 +9763,6 @@ paternalism
 pathologist
 peasanthood
 peculiarity
-penetration
 performance
 periodicity
 perpetrator
