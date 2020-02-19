@@ -10,7 +10,6 @@ dim
 dry
 due
 far
-fat
 fit
 hip
 hot
@@ -23,7 +22,6 @@ lop
 low
 mad
 mid
-mum
 net
 new
 non
@@ -79,7 +77,6 @@ cosy
 cozy
 curt
 cute
-damn
 damp
 dang
 dank
@@ -95,7 +92,6 @@ down
 drab
 dual
 dull
-dumb
 east
 easy
 edgy
@@ -110,7 +106,6 @@ fine
 firm
 flat
 fond
-fool
 fore
 foul
 free
@@ -196,7 +191,6 @@ rosy
 rude
 safe
 sane
-sick
 side
 slim
 slow
@@ -220,7 +214,6 @@ tool
 trim
 true
 twin
-ugly
 vain
 vast
 very
@@ -295,7 +288,6 @@ broke
 brown
 brute
 bulky
-bully
 burly
 buxom
 cagey
@@ -314,20 +306,17 @@ corny
 crash
 crisp
 crude
-cruel
 cubic
 curly
 daily
 dandy
 dense
 dingy
-dirty
 dizzy
 doric
 dread
 drier
 drunk
-dummy
 dusky
 dusty
 eager
@@ -346,7 +335,6 @@ false
 famed
 fancy
 fatal
-fatty
 fetid
 fewer
 fiery
@@ -401,7 +389,6 @@ humid
 husky
 ideal
 iliac
-inane
 inapt
 inept
 inert
@@ -437,7 +424,6 @@ lobar
 local
 lofty
 loose
-lousy
 lower
 lowly
 loyal
@@ -694,7 +680,6 @@ bleary
 blithe
 blocky
 blonde
-bloody
 bluish
 blurry
 bodied
@@ -830,7 +815,6 @@ feudal
 fickle
 fierce
 filial
-filthy
 finest
 finite
 firmer
@@ -973,7 +957,6 @@ meager
 medium
 mellow
 menial
-mental
 merest
 middle
 mighty
@@ -1153,7 +1136,6 @@ strong
 stubby
 stuffy
 stumpy
-stupid
 sturdy
 suable
 subtle
@@ -1469,7 +1451,6 @@ fittest
 fitting
 flemish
 flyaway
-foolish
 foppish
 foreign
 forlorn
@@ -1535,7 +1516,6 @@ homeric
 hopeful
 hostile
 hottest
-idiotic
 idyllic
 illegal
 illicit
@@ -1630,7 +1610,6 @@ myeloid
 nascent
 nastier
 natural
-naughty
 nearest
 neatest
 nebular
@@ -1967,7 +1946,6 @@ anterior
 apparent
 arboreal
 aromatic
-arrogant
 arterial
 artistic
 athenian
@@ -2222,7 +2200,6 @@ horrible
 humanist
 hungrier
 hypnotic
-ignorant
 illusive
 illusory
 immanent
@@ -2390,7 +2367,6 @@ parklike
 partisan
 passable
 pastoral
-pathetic
 peaceful
 peculiar
 pedantic
@@ -3163,7 +3139,6 @@ rockbound
 romantick
 roughshod
 rustproof
-sarcastic
 satirical
 sceptical
 schematic
@@ -3480,7 +3455,6 @@ digestible
 diminutive
 diplomatic
 disdainful
-disgusting
 disorderly
 disputable
 disruptive
@@ -3561,7 +3535,6 @@ hypodermic
 hysterical
 idealistic
 ideational
-illiterate
 imcomplete
 immaculate
 immaterial
