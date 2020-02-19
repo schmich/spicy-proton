@@ -39,7 +39,6 @@ back
 best
 cold
 cool
-damn
 dead
 deep
 down
@@ -448,7 +447,6 @@ frankly
 freshly
 further
 fussily
-goddamn
 grandly
 gravely
 greatly
@@ -701,7 +699,6 @@ previous
 probably
 promptly
 properly
-publicly
 racially
 rakishly
 randomly

@@ -54,14 +54,12 @@ cow
 cry
 cud
 cup
-cur
 cut
 dad
 dam
 day
 den
 dew
-die
 dig
 din
 dip
@@ -85,7 +83,6 @@ eve
 eye
 fad
 fan
-fat
 fee
 fig
 fin
@@ -179,7 +176,6 @@ men
 min
 mix
 mob
-mom
 mop
 mud
 mug
@@ -208,7 +204,6 @@ peg
 pen
 pet
 pie
-pig
 pin
 pip
 pit
@@ -223,7 +218,6 @@ pup
 rag
 ram
 rap
-rat
 ray
 rib
 rig
@@ -352,7 +346,6 @@ bite
 blob
 bloc
 blot
-blow
 blue
 blur
 boar
@@ -392,8 +385,6 @@ burn
 burr
 bush
 bust
-butt
-buzz
 cafe
 cage
 cake
@@ -472,7 +463,6 @@ cure
 cusp
 czar
 dale
-dame
 dark
 darn
 dash
@@ -594,7 +584,6 @@ foil
 fold
 folk
 food
-fool
 foot
 fore
 fork
@@ -674,7 +663,6 @@ hare
 harm
 harp
 hash
-hate
 haul
 hawk
 haze
@@ -685,7 +673,6 @@ heck
 heed
 heel
 heir
-hell
 helm
 help
 herb
@@ -701,7 +688,6 @@ hint
 hive
 hobo
 hold
-hole
 holy
 home
 hood
@@ -735,7 +721,6 @@ jail
 java
 jazz
 jeep
-jerk
 jest
 jinx
 john
@@ -755,7 +740,6 @@ kelp
 keno
 khan
 kick
-kill
 kind
 king
 kite
@@ -786,7 +770,6 @@ leak
 leap
 left
 levy
-liar
 lice
 lien
 lieu
@@ -924,7 +907,6 @@ pear
 peck
 peep
 peer
-pest
 pick
 pier
 pike
@@ -1116,7 +1098,6 @@ stew
 stop
 stub
 stud
-suck
 suey
 suit
 surf
@@ -1146,7 +1127,6 @@ test
 text
 thaw
 thud
-thug
 tick
 tide
 tile
@@ -1250,7 +1230,6 @@ wood
 wool
 word
 work
-worm
 writ
 yank
 yard
@@ -1417,7 +1396,6 @@ buggy
 bugle
 build
 bulge
-bully
 bunch
 burst
 buyer
@@ -1535,7 +1513,6 @@ crime
 crisp
 croak
 crone
-crook
 crowd
 crown
 crush
@@ -1593,7 +1570,6 @@ drill
 drink
 drive
 drone
-drove
 drunk
 dryer
 dwarf
@@ -1643,7 +1619,6 @@ field
 fiend
 fight
 filly
-filth
 final
 flail
 flair
@@ -1790,7 +1765,6 @@ hyena
 icing
 ideal
 idiom
-idiot
 idler
 idyll
 ileum
@@ -1864,7 +1838,6 @@ lodge
 logic
 loose
 lorde
-loser
 louse
 lover
 lovie
@@ -1923,7 +1896,6 @@ mough
 mound
 mount
 mouse
-mouth
 movie
 mulch
 mural
@@ -2142,7 +2114,6 @@ score
 scorn
 scout
 scrap
-screw
 scrim
 scrub
 seato
@@ -2159,7 +2130,6 @@ shack
 shade
 shaft
 shake
-shame
 shank
 shape
 share
@@ -2174,7 +2144,6 @@ shelf
 shell
 shewe
 shift
-shill
 shine
 shirt
 shish
@@ -2196,7 +2165,6 @@ skeet
 skiff
 skill
 skirt
-skull
 slack
 slang
 slant
@@ -2213,7 +2181,6 @@ slump
 small
 smash
 smear
-smell
 smile
 smirk
 smoke
@@ -2285,7 +2252,6 @@ stick
 stiff
 still
 sting
-stink
 stint
 stock
 stone
@@ -2760,7 +2726,6 @@ couple
 coupon
 course
 cousin
-coward
 cowboy
 cowman
 coyote
@@ -2825,7 +2790,6 @@ doctor
 dogleg
 dollar
 domain
-donkey
 dosage
 double
 doubte
@@ -2965,7 +2929,6 @@ geeing
 gender
 genera
 gentry
-ghetto
 gibbet
 giblet
 giggle
@@ -3177,7 +3140,6 @@ lustre
 luxury
 madman
 madmen
-maggot
 magnet
 magnum
 maiden
@@ -4512,7 +4474,6 @@ gallery
 gallium
 gangway
 gantlet
-garbage
 garland
 garment
 gateway
@@ -5043,7 +5004,6 @@ recital
 recluse
 recruit
 redcoat
-redneck
 reducer
 redwood
 referee
@@ -5102,7 +5062,6 @@ rotunda
 roundup
 routine
 royalty
-rubbish
 rubdown
 ruffian
 runaway
@@ -5292,7 +5251,6 @@ surgery
 surname
 surtout
 suspect
-swallow
 sweater
 symptom
 synonym
@@ -5905,7 +5863,6 @@ disaster
 disciple
 discount
 disfavor
-disgrace
 disguise
 dishonor
 disorder
@@ -7635,8 +7592,6 @@ hurricane
 husbandry
 hyperbole
 hyperemia
-hypocrisy
-hypocrite
 ignorance
 imbalance
 imbroglio
@@ -8208,7 +8163,6 @@ stratagem
 streetcar
 stretcher
 structure
-stupidity
 stylemark
 suability
 subaltern

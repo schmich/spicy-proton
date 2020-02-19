@@ -37,7 +37,6 @@ cup
 cut
 dam
 did
-die
 dig
 dip
 doo
@@ -161,7 +160,6 @@ zip
 ache
 acts
 adds
-aged
 aids
 aims
 arch
@@ -190,7 +188,6 @@ bite
 bled
 blew
 blot
-blow
 blur
 boil
 bolt
@@ -209,9 +206,7 @@ burn
 bury
 bust
 busy
-butt
 buys
-buzz
 call
 calm
 came
@@ -246,7 +241,6 @@ curb
 cure
 curl
 cuts
-damn
 dare
 darn
 dash
@@ -294,7 +288,6 @@ ends
 envy
 errs
 even
-eyed
 face
 fade
 fail
@@ -327,7 +320,6 @@ flow
 foam
 foil
 fold
-fool
 fork
 form
 fort
@@ -366,7 +358,6 @@ hang
 hark
 harm
 hast
-hate
 hath
 haul
 have
@@ -384,7 +375,6 @@ hint
 hire
 hits
 hold
-hole
 home
 hook
 hoot
@@ -398,7 +388,6 @@ iced
 idle
 iron
 itch
-jerk
 jogs
 join
 joke
@@ -410,7 +399,6 @@ keep
 kept
 kick
 kids
-kill
 kiss
 knew
 knit
@@ -434,7 +422,6 @@ lend
 lent
 lets
 levy
-lick
 lied
 lies
 lift
@@ -512,7 +499,6 @@ peer
 perk
 pick
 pile
-piss
 pity
 plan
 play
@@ -604,7 +590,6 @@ shop
 shot
 show
 shun
-shut
 sigh
 sign
 sing
@@ -643,7 +628,6 @@ stem
 step
 stir
 stop
-suck
 sued
 sues
 suit
@@ -861,7 +845,6 @@ budge
 build
 built
 bulks
-bully
 burns
 burnt
 burst
@@ -982,7 +965,6 @@ drips
 drive
 droop
 drops
-drove
 drown
 drunk
 dulls
@@ -1110,7 +1092,6 @@ hangs
 harry
 hatch
 hated
-hates
 hauls
 haunt
 hawks
@@ -1314,7 +1295,6 @@ pours
 power
 press
 price
-prick
 pride
 print
 prize
@@ -1393,7 +1373,6 @@ scoop
 score
 scour
 scout
-screw
 scrub
 scuff
 seals
@@ -1409,7 +1388,6 @@ sewed
 shade
 shake
 shall
-shame
 shape
 share
 shave
@@ -1425,7 +1403,6 @@ shook
 shoot
 shore
 shout
-shove
 shown
 shows
 shred
@@ -1456,7 +1433,6 @@ slump
 slung
 smack
 smash
-smell
 smelt
 smile
 smirk
@@ -1510,7 +1486,6 @@ steps
 stick
 still
 sting
-stink
 stirs
 stock
 stole
@@ -1972,7 +1947,6 @@ cycles
 dabbed
 damage
 dammed
-damned
 dampen
 danced
 dances
@@ -2280,7 +2254,6 @@ harbor
 harden
 harmed
 hasten
-hating
 hauled
 haunts
 having
@@ -2741,7 +2714,6 @@ result
 resume
 retail
 retain
-retard
 retell
 retied
 retire
@@ -2962,7 +2934,6 @@ strung
 styled
 subdue
 submit
-sucked
 suffer
 suited
 sulked
@@ -3647,7 +3618,6 @@ desires
 despair
 despise
 dessier
-destroy
 detract
 develop
 deviate
@@ -3943,7 +3913,6 @@ glutted
 gnawing
 gobbled
 gobbles
-goddamn
 golfing
 gorging
 gouging
@@ -4857,7 +4826,6 @@ subside
 subsist
 succeed
 succumb
-sucking
 sudsing
 suffers
 suffice
@@ -4880,7 +4848,6 @@ suspect
 suspend
 sustain
 swabbed
-swallow
 swamped
 swarmed
 swathed
@@ -6425,7 +6392,6 @@ restrict
 resulted
 resuming
 retained
-retarded
 retiring
 retorted
 retraced
