@@ -884,7 +884,6 @@ open
 oval
 oven
 oxen
-paba
 pace
 pack
 pact
@@ -1222,8 +1221,6 @@ wink
 wire
 wish
 wisp
-wlib
-wohd
 wolf
 womb
 wood
@@ -1485,7 +1482,6 @@ conic
 copra
 coral
 corne
-cosec
 couch
 cough
 count
@@ -1542,7 +1538,6 @@ diary
 diety
 digit
 dingo
-diocs
 dirge
 ditch
 ditty
@@ -1836,11 +1831,9 @@ lobby
 local
 lodge
 logic
-loose
 lorde
 louse
 lover
-lovie
 lumen
 lunch
 lunge
@@ -1851,7 +1844,6 @@ madam
 magic
 mahua
 major
-majuh
 maker
 mamma
 mania
@@ -1883,7 +1875,6 @@ mixer
 model
 moire
 molar
-monei
 money
 month
 moral
@@ -1892,7 +1883,6 @@ motet
 motif
 motor
 motto
-mough
 mound
 mount
 mouse
@@ -1902,11 +1892,7 @@ mural
 music
 myrrh
 nadir
-naebm
-nairo
-nareb
 navel
-nawth
 nerve
 newel
 niche
@@ -1915,7 +1901,6 @@ night
 noise
 nonce
 noose
-norad
 north
 notch
 novel
@@ -1923,7 +1908,6 @@ nudge
 nurse
 nylon
 nymph
-oathe
 ocean
 ocher
 ochre
@@ -2086,8 +2070,6 @@ rumen
 rummy
 rumor
 rupee
-russe
-saami
 saber
 sable
 sabre
@@ -2096,7 +2078,6 @@ salad
 salon
 salve
 salvo
-samos
 satin
 sauce
 saver
@@ -2159,7 +2140,6 @@ shunt
 siege
 sieve
 sight
-silke
 siren
 skeet
 skiff
@@ -3670,7 +3650,6 @@ stupor
 suburb
 subway
 succor
-sudden
 suffix
 suitor
 sulfur
@@ -3686,7 +3665,6 @@ survey
 swerve
 switch
 swivel
-sworde
 symbol
 syndic
 syntax
@@ -4361,7 +4339,6 @@ emerald
 emotion
 empathy
 emperor
-employe
 endgame
 entrant
 entropy
@@ -4575,7 +4552,6 @@ hustler
 hutment
 hyaline
 hydride
-hydrido
 hygiene
 imagery
 imaging
@@ -4601,8 +4577,6 @@ interim
 interne
 invader
 inverse
-iocsixf
-iocsixg
 iridium
 janitor
 jawbone
@@ -5158,7 +5132,6 @@ slaying
 sleeper
 slicker
 slipper
-slitter
 slowing
 slugger
 slumber
@@ -5447,7 +5420,6 @@ whistle
 widower
 wielder
 wildcat
-william
 windbag
 wingman
 woomera
@@ -5461,7 +5433,6 @@ worsted
 wrapper
 wrinkle
 writing
-yachtel
 yardage
 yelling
 zoology
@@ -5476,7 +5447,6 @@ absinthe
 absolute
 absorber
 abstract
-academeh
 academic
 accident
 accolade
@@ -6309,7 +6279,6 @@ menarche
 merchant
 messhall
 metaphor
-metrazol
 midnight
 midpoint
 militant
