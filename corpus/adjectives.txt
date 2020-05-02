@@ -265,7 +265,6 @@ axial
 baggy
 balmy
 banal
-bantu
 baser
 basic
 bawdy
@@ -474,7 +473,6 @@ ohmic
 olden
 older
 olive
-orney
 outer
 overt
 papal

@@ -594,7 +594,6 @@ frau
 fray
 frog
 fuel
-full
 fund
 fury
 fuse
@@ -5923,7 +5922,6 @@ epiphany
 equality
 equating
 equation
-eromonga
 eruption
 escapade
 escapist
@@ -5936,7 +5934,6 @@ eutectic
 evensong
 evidence
 examiner
-excelsin
 exchange
 executor
 exemplar
