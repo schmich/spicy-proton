@@ -18,6 +18,8 @@ puts Spicy::Proton.pair
 
 ## Usage
 
+**Option 1: Class methods**
+
 When generating single or infrequent specimens, class methods are faster and use less memory.
 
 ```ruby
@@ -40,6 +42,8 @@ Spicy::Proton.noun(min: 5, max: 7)  # => "dolphin"
 Spicy::Proton.adverb(min: 0)        # => "prophetically"
 Spicy::Proton.verb(max: 100)        # => "sparkles"
 ```
+
+**Option 2: Instance methods**
 
 When generating multiple specimens, instance methods are faster. The instance keeps the word corpus in memory. The instance methods are the same as their class method counterparts.
 
