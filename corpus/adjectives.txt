@@ -734,7 +734,6 @@ cloudy
 clumsy
 coarse
 colder
-collar
 comely
 commit
 common

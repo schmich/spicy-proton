@@ -1311,7 +1311,6 @@ baron
 basin
 batch
 baton
-bayly
 beach
 beard
 beast
@@ -1751,7 +1750,6 @@ hovel
 howse
 hubby
 human
-humly
 humor
 hunch
 hurry
@@ -2096,7 +2094,6 @@ scout
 scrap
 scrim
 scrub
-seato
 sedan
 sense
 sepia
@@ -2435,7 +2432,6 @@ zebra
 acacia
 accent
 accord
-aconte
 acting
 action
 active
@@ -4657,7 +4653,6 @@ lottery
 loyalty
 luggage
 lullaby
-lyriist
 machine
 maestro
 magnate
@@ -5244,7 +5239,6 @@ tektite
 telling
 tempera
 tempest
-tempore
 tempter
 tenancy
 tending
@@ -10799,7 +10793,6 @@ photomicrography
 piezoelectricity
 propylthiouracil
 reclassification
-representational
 steprelationship
 supranationalism
 triphenylstibine
