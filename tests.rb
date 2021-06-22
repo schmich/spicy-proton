@@ -147,6 +147,10 @@ class Tests < Minitest::Test
     refute(c.nouns.empty?)
     refute(c.adverbs.empty?)
     refute(c.verbs.empty?)
+    refute(c.adjectives.any?(&:empty?))
+    refute(c.nouns.any?(&:empty?))
+    refute(c.adverbs.any?(&:empty?))
+    refute(c.verbs.any?(&:empty?))
   end
 
   private

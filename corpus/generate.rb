@@ -35,6 +35,7 @@ require 'memory-corpus'
 
   fixed_file = File.join(out_dir, File.basename(source, '.txt') + '-fixed.bin')
   File.open(fixed_file, 'wb') do |w|
+    puts "Write #{fixed_file}."
     width = words.keys.max
     header.write(w)
     words.values.flatten.each do |word|
@@ -45,7 +46,8 @@ require 'memory-corpus'
 
   packed_file = File.join(out_dir, File.basename(source, '.txt') + '.bin')
   File.open(packed_file, 'wb') do |w|
+    puts "Write #{packed_file}."
     header.write(w)
-    w.write(words.values.join("\0"))
+    w.write(words.values.flatten.join("\0"))
   end
 end
