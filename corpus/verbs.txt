@@ -393,7 +393,6 @@ join
 joke
 jolt
 jump
-kayo
 keel
 keep
 kept
@@ -1584,7 +1583,6 @@ usher
 using
 usurp
 utter
-uttuh
 value
 veers
 vexed
@@ -1605,8 +1603,6 @@ waked
 wakes
 walks
 waned
-wanna
-wanta
 wants
 warms
 warns

@@ -61,7 +61,6 @@ hard
 here
 high
 idly
-jist
 just
 last
 late
@@ -79,7 +78,6 @@ next
 nice
 nigh
 once
-onct
 only
 open
 past
@@ -119,7 +117,6 @@ after
 again
 ahead
 alike
-allso
 aloft
 alone
 along
@@ -166,13 +163,11 @@ loose
 lower
 madly
 maybe
-natch
 never
 newly
 nilly
 oddly
 often
-onleh
 plain
 plumb
 prior
@@ -210,7 +205,6 @@ willy
 worse
 wrong
 wryly
-yehhh
 ablaze
 aboard
 abroad
