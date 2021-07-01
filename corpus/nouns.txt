@@ -1344,7 +1344,6 @@ bloke
 blood
 bloom
 bluff
-bmews
 board
 boast
 bobby
@@ -1352,7 +1351,6 @@ bogey
 bongo
 boost
 booth
-booty
 booze
 borax
 borer
