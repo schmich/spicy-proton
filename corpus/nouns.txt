@@ -482,7 +482,6 @@ dell
 dent
 desk
 dial
-diam
 dice
 diem
 diet
@@ -1159,7 +1158,6 @@ tung
 turf
 turn
 twin
-tyme
 type
 unit
 urea
@@ -1461,10 +1459,8 @@ clown
 cluck
 clump
 coach
-coahr
 coast
 cobra
-cocao
 cocoa
 colon
 color
@@ -1476,7 +1472,6 @@ comma
 conic
 copra
 coral
-corne
 couch
 cough
 count
@@ -1739,7 +1734,6 @@ honor
 hooch
 horde
 horse
-hoste
 hotel
 hound
 house
@@ -1963,7 +1957,6 @@ plain
 plane
 plank
 plant
-plasm
 plate
 plaza
 pluck
@@ -2281,7 +2274,6 @@ tempo
 tenor
 tense
 terry
-theaf
 theft
 theme
 thick

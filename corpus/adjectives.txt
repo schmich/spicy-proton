@@ -301,7 +301,6 @@ close
 cocky
 comic
 corny
-crash
 crisp
 crude
 cubic
@@ -705,7 +704,6 @@ cackly
 calmer
 candid
 carnal
-carven
 casual
 catchy
 causal
@@ -734,7 +732,6 @@ clumsy
 coarse
 colder
 comely
-commit
 common
 convex
 cooler
