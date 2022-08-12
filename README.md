@@ -62,7 +62,7 @@ gen = Spicy::Proton.new
 end
 ```
 
-Instances also provide raw word lists in length order:
+Instances also provide raw word lists in length-alphabetic order:
 
 ```ruby
 gen.adjectives    # => ["aft", "apt", "bad", "big", ...]
