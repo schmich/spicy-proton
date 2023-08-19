@@ -1,4 +1,4 @@
-lib/corpus/*.bin
-lib/corpus/*.yaml
+# lib/corpus/*.bin
+# lib/corpus/*.yaml
 *.gem
 Gemfile.lock
